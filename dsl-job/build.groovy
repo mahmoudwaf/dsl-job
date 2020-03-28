@@ -10,7 +10,7 @@ job('First-DSL-job'){
   steps{
     maven('clean package','dsl-job/pom.xml')
   }
-  publisher{
+  publishers{
     archiveArtifacts '**/*.jar'
   }
 }
